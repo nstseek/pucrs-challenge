@@ -1,0 +1,64 @@
+.aqua {
+    background-color: #6bcbb8;
+}
+
+.red {
+    background-color: #db4152;
+}
+
+.orange {
+    background-color: #f47a44;
+}
+
+.purple {
+    background-color: #69479d;
+}
+
+.green {
+    background-color: #009877;
+}
+
+.blue {
+    background-color: #345d9d;
+}
+
+.yellow {
+    background-color: #ffb548;
+}
+
+section.selector {
+    padding: 50px 0px;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.selector .btn {
+    color: white;
+    margin: 0px 10px;
+}
+
+section.selector > div.selectors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball {
+    width: calc(100% - 10px);
+    height: calc((1000px / 8) - 10px);
+    padding: 5px;
+    border-radius: 50%;
+    justify-self: center;
+    margin-bottom: 10px;
+}
+
+.items {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    width: 100%;
+}

@@ -1,0 +1,36 @@
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
+
+.breadcrumb {
+  background-color: transparent;
+  margin: 7px 0px;
+  padding-left: 0;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #0e4172;
+}
+
+.banner {
+  margin: auto;
+  width: 1000px;
+}
+
+.banner-container {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url("../assets/pucrs_campus_brunotodeschini.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.banner-container > span {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+}

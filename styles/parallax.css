@@ -1,0 +1,15 @@
+.parallax {
+  background-image: url("../assets/living360-8457.png");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax > h1 {
+  color: white;
+}

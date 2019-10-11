@@ -19,8 +19,17 @@
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
     <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/carousel.css" />
+    <link rel="stylesheet" href="./styles/banner.css" />
+    <link rel="stylesheet" href="./styles/circles.css" />
+    <link rel="stylesheet" href="./styles/parallax.css" />
+    <link rel="stylesheet" href="./styles/selector.css" />
     <link rel="shortcut icon" href="assets/favicon.png" />
     <script
       src="https://kit.fontawesome.com/936aa57b75.js"
@@ -29,38 +38,130 @@
     <title>PUCRS Challenge</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-2"><img src="assets/logo_topo.png" /></div>
-          <div class="col-10 header-nav">
-            <span class="selected">MENU A</span>
-            <span>MENU B</span>
-            <span>MENU C</span>
-            <span>MENU D</span>
-            <div class="dropdown-nav-menu">
-              <button class="btn" type="button">
-                MAKE A SELECTION
-                <i class="fas fa-chevron-down icon"></i>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Opcao 1</a>
-                <a class="dropdown-item" href="#">Opcao 2</a>
-                <a class="dropdown-item" href="#">Opcao 3</a>
-                <a class="dropdown-item" href="#">Opcao 4</a>
-              </div>
-            </div>
-            <div class="search-container">
-              <button class="btn">
-                <i class="fas fa-search"></i>SEARCH
-              </button>
-              <input class="hidden" type="text" placeholder="Pesquise aqui" />
-              <i class="fas fa-search icon hidden"></i>
-            </div>
+    <nav>
+      <div class="img-container"><img src="assets/logo_topo.png" /></div>
+      <div class="nav-items">
+        <span class="selected">MENU A</span>
+        <span>MENU B</span>
+        <span>MENU C</span>
+        <span>MENU D</span>
+        <div class="dropdown-nav-menu">
+          <button class="btn" type="button">
+            MAKE A SELECTION
+            <i class="fas fa-chevron-down icon"></i>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Opcao 1</a>
+            <a class="dropdown-item" href="#">Opcao 2</a>
+            <a class="dropdown-item" href="#">Opcao 3</a>
+            <a class="dropdown-item" href="#">Opcao 4</a>
+          </div>
+        </div>
+        <div class="search-container">
+          <button class="btn"><i class="fas fa-search"></i>SEARCH</button>
+          <input class="hidden" type="text" placeholder="Pesquise aqui" />
+          <i class="fas fa-search icon hidden"></i>
+        </div>
+      </div>
+    </nav>
+    <section class="carousel">
+      <div id="mainCarouselPUCRS" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li
+            data-target="#mainCarouselPUCRS"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#mainCarouselPUCRS" data-slide-to="1"></li>
+          <li data-target="#mainCarouselPUCRS" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="5000">
+            <img
+              src="assets/2017_09_01-campus_enade.png"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-interval="5000">
+            <img src="assets/PUCRS.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-interval="5000">
+            <img
+              src="assets/vestibular2017-8603.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
           </div>
         </div>
       </div>
-    </header>
+    </section>
+    <section class="banner">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Step One</a></li>
+          <li class="breadcrumb-item"><a href="#">Step Two</a></li>
+          <li class="breadcrumb-item"><a href="#">Step Three</a></li>
+          <li class="breadcrumb-item"><a href="#">Step Four</a></li>
+          <li class="breadcrumb-item">BREADCRUMB</li>
+        </ol>
+      </nav>
+      <div class="banner-container">
+        <span>BANNER CONTAINER</span>
+      </div>
+    </section>
+    tem q criar os links pros circles embaixo aqui, cada um tem q levar pra 1
+    link
+    <section class="circles">
+      <div class="section-title">
+        <h3>TITULO DA SECAO</h3>
+      </div>
+      <div class="circles-container animated slideInLeft delay-2s">
+        <div class="circle-container">
+          <img src="assets/pucrs-1690616.png" alt="Lorem Ipsum" />
+          <h4>LOREM IPSUM DOLOR SIT AMET</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            vestibulum mauris ut diam vulputate, nec scelerisque magna.
+          </p>
+        </div>
+        <div class="circle-container">
+          <img
+            src="assets/mc200219__puc_predio_novo__39_-8633352.jpg"
+            alt="Lorem Ipsum"
+          />
+          <h4>LOREM IPSUM DOLOR</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            vestibulum mauris ut diam vulputate, nec scelerisque magna.
+            Pellentesque feugiat molestie enim a aliquam.
+          </p>
+        </div>
+        <div class="circle-container">
+          <img src="assets/foto3_6.jpg" alt="Lorem Ipsum" />
+          <h4>LOREM IPSUM DOLOR ETUR</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            vestibulum mauris. Pellentesque feugiat molestie enim a aliquam.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="parallax">
+      <h1>PARALLAX</h1>
+    </section>
+    <section class="selector">
+      <div class="selectors">
+        <button type="button" class="btn aqua">FILTRO 1</button>
+        <button type="button" class="btn red">FILTRO 2</button>
+        <button type="button" class="btn orange">FILTRO 3</button>
+        <button type="button" class="btn purple">FILTRO 4</button>
+        <button type="button" class="btn green">FILTRO 5</button>
+        <button type="button" class="btn blue">FILTRO 6</button>
+        <button type="button" class="btn yellow">FILTRO 7</button>
+      </div>
+      <div class="items"></div>
+    </section>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

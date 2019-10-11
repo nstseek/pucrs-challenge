@@ -1,0 +1,17 @@
+.carousel .carousel-item img {
+  width: 100vw;
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-indicators li {
+  background-color: #6ab3e3;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+section.carousel {
+  margin-top: 100px;
+}

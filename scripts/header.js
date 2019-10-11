@@ -1,10 +1,10 @@
 const headerDropdownButton = document.querySelector(
-  ".header-nav .dropdown-nav-menu"
+  ".nav-items .dropdown-nav-menu"
 );
 const openDropdownClass = "open";
 const openDropdownMenu = "show-dropdown-menu";
 const headerDropdownContent = document.querySelector(
-  ".header-nav .dropdown-menu"
+  ".nav-items .dropdown-menu"
 );
 
 headerDropdownButton.addEventListener("click", () => {
@@ -18,13 +18,13 @@ headerDropdownButton.addEventListener("click", () => {
 });
 
 const searchBarInput = document.querySelector(
-  ".header-nav .search-container input"
+  ".nav-items .search-container input"
 );
 const searchBarButton = document.querySelector(
-  ".header-nav .search-container button"
+  ".nav-items .search-container button"
 );
 const searchBarSecondaryIcon = document.querySelector(
-  ".header-nav .search-container i.hidden"
+  ".nav-items .search-container i.hidden"
 );
 const hiddenClass = "hidden";
 
