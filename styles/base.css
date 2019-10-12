@@ -7,6 +7,10 @@ html {
   color: #0e4172;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .hidden {
   display: none !important;
 }

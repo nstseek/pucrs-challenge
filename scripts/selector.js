@@ -1,5 +1,7 @@
 const ballsArray = [];
 
+const dataColor = "data-color";
+
 for (let i = 0; i < 8 * 4; i++) {
   const tempDiv = document.createElement("div");
   tempDiv.classList.add("ball");
@@ -32,11 +34,11 @@ for (let i = 0; i < 8 * 4; i++) {
     default:
       break;
   }
-  tempDiv.setAttribute("data-color", rand);
+  tempDiv.setAttribute(dataColor, rand);
   ballsArray.push(tempDiv);
 }
 
-let filtering = {
+const filtering = {
   status: false,
   color: null
 };
@@ -45,34 +47,54 @@ const ballsGrid = document.querySelector("section.selector .items");
 
 ballsArray.forEach(element => ballsGrid.appendChild(element));
 
+const filterButtons = document.querySelectorAll(
+  "section.selector > .selectors > .btn"
+);
+
 const filterCb = event => {
   ballsArray.forEach(ball => {
     if (ballsGrid.contains(ball)) ballsGrid.removeChild(ball);
   });
   if (!filtering.status) {
     filtering.status = true;
-    filtering.color = event.target.getAttribute("data-color");
+    filtering.color = event.target.getAttribute(dataColor);
   } else if (
     filtering.status &&
-    event.target.getAttribute("data-color") === filtering.color
+    event.target.getAttribute(dataColor) === filtering.color
   ) {
     filtering.status = false;
     filtering.color = null;
   } else {
-    filtering.color = event.target.getAttribute("data-color");
+    filtering.color = event.target.getAttribute(dataColor);
   }
   ballsArray.forEach(ball => {
     if (
-      ball.getAttribute("data-color") ===
-        event.target.getAttribute("data-color") ||
+      ball.getAttribute(dataColor) === event.target.getAttribute(dataColor) ||
       !filtering.status
     )
       ballsGrid.appendChild(ball);
   });
+  if (filtering.status) {
+    filterButtons.forEach(button => {
+      if (
+        button.getAttribute(dataColor) === filtering.color &&
+        !button.classList.contains("selected")
+      ) {
+        button.classList.add("selected");
+      } else if (
+        button.classList.contains("selected") &&
+        button.getAttribute(dataColor) !== filtering.color
+      ) {
+        button.classList.remove("selected");
+      }
+    });
+  } else {
+    filterButtons.forEach(button => {
+      if (button.classList.contains("selected")) {
+        button.classList.remove("selected");
+      }
+    });
+  }
 };
-
-const filterButtons = document.querySelectorAll(
-  "section.selector > .selectors > .btn"
-);
 
 filterButtons.forEach(button => button.addEventListener("click", filterCb));
