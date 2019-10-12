@@ -36,6 +36,43 @@ for (let i = 0; i < 8 * 4; i++) {
   ballsArray.push(tempDiv);
 }
 
+let filtering = {
+  status: false,
+  color: null
+};
+
 const ballsGrid = document.querySelector("section.selector .items");
 
 ballsArray.forEach(element => ballsGrid.appendChild(element));
+
+const filterCb = event => {
+  ballsArray.forEach(ball => {
+    if (ballsGrid.contains(ball)) ballsGrid.removeChild(ball);
+  });
+  if (!filtering.status) {
+    filtering.status = true;
+    filtering.color = event.target.getAttribute("data-color");
+  } else if (
+    filtering.status &&
+    event.target.getAttribute("data-color") === filtering.color
+  ) {
+    filtering.status = false;
+    filtering.color = null;
+  } else {
+    filtering.color = event.target.getAttribute("data-color");
+  }
+  ballsArray.forEach(ball => {
+    if (
+      ball.getAttribute("data-color") ===
+        event.target.getAttribute("data-color") ||
+      !filtering.status
+    )
+      ballsGrid.appendChild(ball);
+  });
+};
+
+const filterButtons = document.querySelectorAll(
+  "section.selector > .selectors > .btn"
+);
+
+filterButtons.forEach(button => button.addEventListener("click", filterCb));
