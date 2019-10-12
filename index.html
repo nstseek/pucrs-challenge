@@ -9,20 +9,9 @@
     <meta name="application-name" content="PUCRS Challenge" />
     <meta name="description" content="PUCRS Challenge - Front-end" />
     <meta name="author" content="Rafael Lopes Schneider" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-    />
+    <link rel="stylesheet" href="./styles/packages/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/packages/roboto.css" />
+    <link rel="stylesheet" href="./styles/packages/animate.min.css" />
     <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/carousel.css" />
@@ -31,11 +20,11 @@
     <link rel="stylesheet" href="./styles/parallax.css" />
     <link rel="stylesheet" href="./styles/selector.css" />
     <link rel="stylesheet" href="./styles/gradient.css" />
+    <link rel="stylesheet" href="./styles/map.css" />
+    <link rel="stylesheet" href="./styles/menu.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="shortcut icon" href="assets/favicon.png" />
-    <script
-      src="https://kit.fontawesome.com/936aa57b75.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="scripts/packages/fontawesome.js"></script>
     <title>PUCRS Challenge</title>
   </head>
   <body>
@@ -85,7 +74,7 @@
             />
           </div>
           <div class="carousel-item" data-interval="5000">
-            <img src="assets/PUCRS.png" class="d-block w-100" alt="..." />
+            <img src="assets/feng.jpg" class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item" data-interval="5000">
             <img
@@ -111,11 +100,15 @@
         <span>BANNER CONTAINER</span>
       </div>
     </section>
-    <section class="circles">
+    <header
+      class="circles wow animated slideInLeft delay-2s"
+      data-wow-delay="0s"
+      data-wow-offset="100"
+    >
       <div class="section-title">
         <h3>TÍTULO DA SEÇÃO</h3>
       </div>
-      <div class="circles-container animated slideInLeft delay-2s">
+      <div class="circles-container">
         <a href="#">
           <div class="circle-container">
             <img src="assets/pucrs-1690616.png" alt="Lorem Ipsum" />
@@ -151,7 +144,7 @@
           </div>
         </a>
       </div>
-    </section>
+    </header>
     <section class="parallax">
       <h1>PARALLAX</h1>
     </section>
@@ -176,24 +169,318 @@
     <section class="gradient">
       <h1>GRADIENTE DE ALTURA IGUAL A ALTURA DA TELA</h1>
     </section>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="scripts/selector.js"></script>
-    <script src="scripts/header.js"></script>
+    <section class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.184832446364!2d-51.176478049406576!3d-30.060235981787642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519770132aa4629%3A0xc3d92a7009ad466d!2sCentro%20de%20Eventos%20da%20PUCRS!5e0!3m2!1spt-BR!2sbr!4v1570899273405!5m2!1spt-BR!2sbr"
+        frameborder="0"
+        style="border:0;"
+        allowfullscreen=""
+      ></iframe>
+    </section>
+    <main
+      class="menu  wow animated slideInRight delay-2s"
+      data-wow-delay="0s"
+      data-wow-offset="100"
+    >
+      <div class="header">
+        <div class="left spacing"></div>
+        <h3>TÍTULO DA SEÇÃO</h3>
+        <div class="right spacing"></div>
+      </div>
+      <div class="container-menu">
+        <nav class="sidebar">
+          <img src="assets/logo_topo.png" />
+          <ul>
+            <li>
+              <span>MENU DROPDOWN 1</span>
+              <i class="fas fa-chevron-down icon"></i>
+            </li>
+            <li class="hidden">
+              <ul>
+                <li data-target="1">Opcao 1</li>
+                <li data-target="2">Opcao 2</li>
+                <li data-target="3">Opcao 3</li>
+              </ul>
+            </li>
+            <li>
+              <span>MENU DROPDOWN 2</span>
+              <i class="fas fa-chevron-down icon"></i>
+            </li>
+            <li class="hidden">
+              <ul>
+                <li data-target="4">Opcao 1</li>
+                <li data-target="5">Opcao 2</li>
+              </ul>
+            </li>
+            <li>
+              <span>MENU DROPDOWN 3</span>
+              <i class="fas fa-chevron-down icon"></i>
+            </li>
+            <li class="hidden">
+              <ul>
+                <li data-target="6">Opcao 1</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="content">
+          <h4>Título do Menu</h4>
+          <div class="buttons">
+            <button>BOTÃO 1</button>
+            <button>BOTÃO 2</button>
+            <button>BOTÃO 3</button>
+            <button>BOTÃO 4</button>
+            <button>BOTÃO 5</button>
+            <button>BOTÃO 6</button>
+          </div>
+          <h5>Conteúdo varia de acordo com a ativação das abas acima</h5>
+          <span
+            >Lorem ipsum<sup>1</sup> dolor sit amet,
+            <i>consectetur adipiscing elit</i>. Integer sed ex eu diam
+            pellentesque consequat. <b>Integer tellus odio</b>, scelerisque a
+            faucibus at, volutpat a odio. Sed blandit, tortor eget pharetra
+            tincidunt, diam dolor faucibus sem, nec imperdiet nulla felis vitae
+            lorem. Maecenas dignissim in est at malesuada. Nullam non odio
+            risus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            Sed congue felis sapien, et dignissim purus elementum eget.
+            Curabitur imperdiet purus ut mi lacinia euismod.</span
+          >
+          <div class="row-div table-image">
+            <table>
+              <tr>
+                <th>#</th>
+                <th>Col 1</th>
+                <th>Col 2</th>
+                <th>Col 3</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Row 1</td>
+                <td>Row 1</td>
+                <td>Row 1</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Row 2</td>
+                <td>Row 2</td>
+                <td>Row 2</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Row 3</td>
+                <td>Row 3</td>
+                <td>Row 3</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Row 4</td>
+                <td>Row 4</td>
+                <td>Row 4</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Row 5</td>
+                <td>Row 5</td>
+                <td>Row 5</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Row 6</td>
+                <td>Row 6</td>
+                <td>Row 6</td>
+              </tr>
+            </table>
+
+            <div id="slideshow" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="5000">
+                  <img
+                    class="d-block w-100"
+                    src="assets/5-Fotos-férias-671x377_c.jpg"
+                    alt="First slide"
+                  />
+                </div>
+                <div class="carousel-item" data-interval="5000">
+                  <img
+                    class="d-block w-100"
+                    src="assets/Pessoas-felizes.jpg"
+                    alt="Second slide"
+                  />
+                </div>
+                <div class="carousel-item" data-interval="5000">
+                  <img
+                    class="d-block w-100"
+                    src="assets/ar-784x400-21_habitos_da_pessoas_felizes.jpg"
+                    alt="Third slide"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row-div calendar-ol">
+            <div class="calendar">
+              <div>SETEMBRO 2019</div>
+              <table>
+                <tr>
+                  <td>S</td>
+                  <td>T</td>
+                  <td>Q</td>
+                  <td>Q</td>
+                  <td>S</td>
+                  <td>S</td>
+                  <td>D</td>
+                </tr>
+                <tr>
+                  <td class="gray">26</td>
+                  <td class="gray">27</td>
+                  <td class="gray">28</td>
+                  <td class="gray">29</td>
+                  <td class="gray">30</td>
+                  <td class="gray">31</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>17</td>
+                  <td>18</td>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                </tr>
+                <tr>
+                  <td>23</td>
+                  <td>24</td>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                </tr>
+                <tr>
+                  <td>30</td>
+                  <td class="gray">1</td>
+                  <td class="gray">2</td>
+                  <td class="gray">3</td>
+                  <td class="gray">4</td>
+                  <td class="gray">5</td>
+                  <td class="gray">6</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="ols">
+              <ol>
+                <li>Item da lista 1</li>
+                <li>Item da lista 1</li>
+                <li>Item da lista 1</li>
+                <li>Item da lista 1</li>
+                <li>Item da lista 1</li>
+                <li>Item da lista 1</li>
+                <li>Item da lista 1</li>
+                <li>Item da lista 1</li>
+                <li>Item da lista 1</li>
+                <li>Item da lista 1</li>
+              </ol>
+              <ol>
+                <li>Item da lista 2</li>
+                <li>Item da lista 2</li>
+                <li>Item da lista 2</li>
+                <li>Item da lista 2</li>
+                <li>Item da lista 2</li>
+                <li>Item da lista 2</li>
+                <li>Item da lista 2</li>
+                <li>Item da lista 2</li>
+                <li>Item da lista 2</li>
+                <li>Item da lista 2</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="header">
+        <button>BOTÃO 1</button>
+        <button>BOTÃO 2</button>
+        <button>BOTÃO 3</button>
+        <button>BOTÃO 4</button>
+        <button>BOTÃO 5</button>
+      </div>
+      <div class="content">
+        <div class="buttons">
+          <button>BOTÃO 1</button>
+          <button>BOTÃO 2</button>
+          <button>BOTÃO 3</button>
+          <button>BOTÃO 4</button>
+        </div>
+        <div class="links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Contact us</a>
+        </div>
+        <div class="links">
+          <a href="#">Blog</a>
+          <a href="#">Search</a>
+          <a href="#">T & Cs</a>
+          <a href="#">Privacy</a>
+          <a href="#">Community</a>
+        </div>
+        <div class="links">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+          <a href="#">Link 5</a>
+        </div>
+        <div class="newsletter">
+          <span>Assine nossa newsletter</span>
+          <input type="text" placeholder="Informe seu e-mail" />
+          <div class="social-icons">
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/packages/jquery-3.3.1.slim.min.js"></script>
+    <script src="scripts/packages/popper.min.js"></script>
+    <script src="scripts/packages/bootstrap.min.js"></script>
+    <script src="scripts/packages/wow.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/selector.js"></script>
+    <script src="scripts/menu.js"></script>
     <noscript
       >Your browser does not support JavaScript! This website requires
       JavaScript to work properly.</noscript

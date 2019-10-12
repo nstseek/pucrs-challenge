@@ -1,14 +1,10 @@
 html {
-  min-width: 960px;
+  min-width: 1000px;
 }
 
 * {
   font-family: "Roboto", sans-serif;
   color: #0e4172;
-}
-
-a:hover {
-  text-decoration: none;
 }
 
 .hidden {

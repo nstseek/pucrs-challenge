@@ -1,0 +1,282 @@
+main.menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  height: 1000px;
+  padding: 50px 0px;
+}
+
+main.menu nav.sidebar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: calc(30% - 5px);
+  margin-right: 5px;
+  height: 100%;
+  background-color: #6ab3e3;
+}
+
+main.menu nav.sidebar > ul > li:first-child {
+  border-top: 1px solid white;
+}
+
+main.menu nav.sidebar > ul > li:nth-child(even) li {
+  color: white;
+  border: 0;
+}
+
+main.menu nav.sidebar > ul > li:nth-child(even) li:not(.selected):hover {
+  background-color: #3b7eab;
+}
+
+main.menu nav.sidebar > ul > li:nth-child(even) li.selected {
+  background-color: #2e6285;
+}
+
+main.menu nav.sidebar > ul > li:nth-child(even) > ul {
+  padding: 0;
+  width: 100%;
+}
+
+main.menu nav.sidebar > ul > li:nth-child(even) {
+  background-color: #5397c4;
+  padding: 0;
+}
+
+main.menu nav.sidebar > ul > li > span,
+main.menu nav.sidebar > ul > li > i {
+  color: white;
+}
+
+main.menu nav.sidebar li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  min-height: 75px;
+  height: max-content;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+
+main.menu nav.sidebar > img {
+  margin: 20% 0;
+  width: 70%;
+}
+
+main.menu nav.sidebar > ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+main.menu > div.container-menu > div.content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: calc(70% - 5px);
+  margin-left: 5px;
+  height: 100%;
+  background-color: #007d95;
+  flex-direction: column;
+  padding: 20px;
+}
+
+main.menu > div.container-menu > div.content > h4 {
+  font-weight: bold;
+}
+
+main.menu > div.container-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  width: 1000px;
+  margin: auto;
+  padding: 0;
+}
+
+main.menu > div.header {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+main.menu > div.header > div.spacing {
+  flex: 1;
+}
+
+main.menu > div.header > h3 {
+  margin: 0px 50px;
+  font-weight: bold;
+}
+
+main.menu > div.header > div.right {
+  height: 5px;
+  background-color: #6ab3e3;
+}
+
+main.menu > div.container-menu > div.content * {
+  color: white;
+}
+
+main.menu > div.container-menu > div.content > div.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+main.menu > div.container-menu > div.content > div.buttons > button {
+  width: calc((100% / 6) - 20px);
+  margin: 10px;
+  background-color: #0bd6d6;
+  border: 0;
+  height: 30px;
+  font-size: 14px;
+}
+
+main.menu > div.container-menu > div.content > h5 {
+  font-weight: bold;
+  color: white;
+}
+
+main.menu > div.container-menu > div.content > div.row-div {
+  margin-top: 20px;
+  flex: 1;
+  width: 100%;
+  display: flex;
+}
+
+main.menu > div.container-menu > div.content > div.row-div > * {
+  height: 100%;
+  width: calc(50% - 15px);
+}
+
+main.menu > div.container-menu > div.content > div.row-div > *:first-child {
+  margin-right: 15px;
+}
+
+main.menu > div.container-menu > div.content > div.row-div > *:last-child {
+  margin-left: 15px;
+}
+
+main.menu > div.container-menu > div.content > div.table-image > table * {
+  background-color: white;
+  color: #0e849a;
+  font-size: 13px;
+}
+
+main.menu > div.container-menu > div.content > div.table-image > table th,
+main.menu > div.container-menu > div.content > div.table-image > table td {
+  padding-left: 10px;
+}
+
+main.menu > div.container-menu > div.content > div.table-image div.carousel * {
+  height: 100%;
+  object-fit: cover;
+}
+
+main.menu > div.container-menu > div.content > div.calendar-ol > div.calendar {
+  display: flex;
+  flex-direction: column;
+}
+
+main.menu > div.container-menu > div.content > div.calendar-ol > div.calendar > div {
+  background-color: #e6e6e6;
+  text-align: center;
+  font-weight: bold;
+  color: #007d95;
+  padding: 5px 0px;
+  font-size: 13px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main.menu
+  > div.container-menu
+  > div.content
+  > div.calendar-ol
+  > div.calendar
+  > table
+  td {
+  padding: 5px;
+}
+
+main.menu
+  > div.container-menu
+  > div.content
+  > div.calendar-ol
+  > div.calendar
+  > table
+  td.gray {
+  color: gray;
+}
+
+main.menu
+  > div.container-menu
+  > div.content
+  > div.calendar-ol
+  > div.calendar
+  > table
+  td,
+main.menu
+  > div.container-menu
+  > div.content
+  > div.calendar-ol
+  > div.calendar
+  > table
+  th {
+  border: 1px solid #c3dbe0;
+}
+
+main.menu
+  > div.container-menu
+  > div.content
+  > div.calendar-ol
+  > div.calendar
+  > table
+  * {
+  background-color: #ebebeb;
+  color: black;
+  text-align: center;
+  font-size: 10px;
+}
+
+main.menu > div.container-menu > div.content > div.calendar-ol > div.ols {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main.menu > div.container-menu > div.content > div.calendar-ol > div.ols > ol:first-child {
+  padding: 0;
+}
+
+main.menu > div.container-menu > div.content > div.calendar-ol > div.ols > * {
+  font-size: 14px;
+}
+
+main.menu > div.container-menu > div.content > div.calendar-ol > div.ols > ol {
+  list-style: none;
+  counter-reset: ol-menu-content;
+}
+
+main.menu > div.container-menu > div.content > div.calendar-ol > div.ols > ol > li {
+  counter-increment: ol-menu-content;
+}
+
+main.menu > div.container-menu > div.content > div.calendar-ol > div.ols > ol > li:before {
+  content: counter(ol-menu-content) " - ";
+  color: white;
+}

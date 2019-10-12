@@ -1,0 +1,94 @@
+footer {
+  background-color: #6ab3e3;
+}
+
+footer button {
+  background-color: white;
+  color: #0e4172;
+  border-radius: 5px;
+  border: 0;
+  font-size: 13px;
+  padding: 5px 0px;
+  cursor: pointer;
+}
+
+footer > div.header {
+  height: 100px;
+  background-color: #0e4172;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+footer > div.header > button {
+  margin: 10px;
+  padding: 5px 40px;
+}
+
+footer > div.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  margin: auto;
+}
+
+footer > div.content > div {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer > div.content > div.buttons {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+footer > div.content > div.buttons > button {
+  width: 100%;
+  margin: 5px 0px;
+  border-radius: 5px;
+}
+
+footer > div.content > div.links > a {
+  font-weight: bold;
+  color: #0e4172;
+  margin: 5px 0px;
+  font-size: 13px;
+}
+
+footer > div.content > div.links > a:hover {
+  text-decoration: none;
+}
+
+footer > div.content > div.newsletter > * {
+  margin-bottom: 10px;
+}
+
+footer > div.content > div.newsletter {
+  flex-grow: 2;
+}
+
+footer > div.content > div.newsletter > input {
+  background-color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+  font-size: 14px;
+}
+
+footer > div.content > div.newsletter i {
+    color: white;
+    margin: 5px;
+    font-size: 20px;
+}
+
+footer > div.content > div.newsletter a:hover {
+    text-decoration: none;
+}

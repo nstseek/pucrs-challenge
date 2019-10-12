@@ -1,7 +1,11 @@
-.carousel .carousel-item img {
+section.carousel .carousel .carousel-item img {
   width: 100vw;
   height: 400px;
   object-fit: cover;
+}
+
+section.carousel .carousel-inner > .carousel-item:first-child > img {
+  object-position: 0 100%;
 }
 
 .carousel-indicators li {
