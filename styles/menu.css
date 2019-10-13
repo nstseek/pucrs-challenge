@@ -57,7 +57,7 @@ main.menu nav.sidebar li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 15px 25px;
   min-height: 75px;
   height: max-content;
   cursor: pointer;
@@ -65,7 +65,7 @@ main.menu nav.sidebar li {
 }
 
 main.menu nav.sidebar > img {
-  margin: 20% 0;
+  margin: 15% 0;
   width: 70%;
 }
 
@@ -87,7 +87,7 @@ main.menu > div.container-menu > div.content {
   padding: 20px;
 }
 
-main.menu > div.container-menu > div.content > h4 {
+main.menu > div.container-menu > div.content h4 {
   font-weight: bold;
 }
 
@@ -127,7 +127,7 @@ main.menu > div.container-menu > div.content * {
   color: white;
 }
 
-main.menu > div.container-menu > div.content > div.buttons {
+main.menu > div.container-menu > div.content div.buttons {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -135,7 +135,7 @@ main.menu > div.container-menu > div.content > div.buttons {
   margin-bottom: 40px;
 }
 
-main.menu > div.container-menu > div.content > div.buttons > button {
+main.menu > div.container-menu > div.content div.buttons > button {
   width: calc((100% / 6) - 20px);
   margin: 10px;
   background-color: #0bd6d6;
@@ -144,53 +144,58 @@ main.menu > div.container-menu > div.content > div.buttons > button {
   font-size: 14px;
 }
 
-main.menu > div.container-menu > div.content > h5 {
+main.menu > div.container-menu > div.content h5 {
   font-weight: bold;
   color: white;
 }
 
-main.menu > div.container-menu > div.content > div.row-div {
+main.menu > div.container-menu > div.content div.row-div {
   margin-top: 20px;
   flex: 1;
   width: 100%;
   display: flex;
 }
 
-main.menu > div.container-menu > div.content > div.row-div > * {
+main.menu > div.container-menu > div.content div.row-div > * {
   height: 100%;
   width: calc(50% - 15px);
 }
 
-main.menu > div.container-menu > div.content > div.row-div > *:first-child {
+main.menu > div.container-menu div.content div.row-div > *:first-child {
   margin-right: 15px;
 }
 
-main.menu > div.container-menu > div.content > div.row-div > *:last-child {
+main.menu > div.container-menu > div.content div.row-div > *:last-child {
   margin-left: 15px;
 }
 
-main.menu > div.container-menu > div.content > div.table-image > table * {
+main.menu > div.container-menu > div.content div.table-image > table * {
   background-color: white;
   color: #0e849a;
   font-size: 13px;
 }
 
-main.menu > div.container-menu > div.content > div.table-image > table th,
-main.menu > div.container-menu > div.content > div.table-image > table td {
+main.menu > div.container-menu > div.content div.table-image > table th,
+main.menu > div.container-menu > div.content div.table-image > table td {
   padding-left: 10px;
 }
 
-main.menu > div.container-menu > div.content > div.table-image div.carousel * {
+main.menu > div.container-menu > div.content div.table-image div.carousel * {
   height: 100%;
   object-fit: cover;
 }
 
-main.menu > div.container-menu > div.content > div.calendar-ol > div.calendar {
+main.menu > div.container-menu > div.content div.calendar-ol > div.calendar {
   display: flex;
   flex-direction: column;
 }
 
-main.menu > div.container-menu > div.content > div.calendar-ol > div.calendar > div {
+main.menu
+  > div.container-menu
+  > div.content
+  div.calendar-ol
+  > div.calendar
+  > div {
   background-color: #e6e6e6;
   text-align: center;
   font-weight: bold;
@@ -206,7 +211,7 @@ main.menu > div.container-menu > div.content > div.calendar-ol > div.calendar > 
 main.menu
   > div.container-menu
   > div.content
-  > div.calendar-ol
+  div.calendar-ol
   > div.calendar
   > table
   td {
@@ -216,7 +221,7 @@ main.menu
 main.menu
   > div.container-menu
   > div.content
-  > div.calendar-ol
+  div.calendar-ol
   > div.calendar
   > table
   td.gray {
@@ -226,14 +231,14 @@ main.menu
 main.menu
   > div.container-menu
   > div.content
-  > div.calendar-ol
+  div.calendar-ol
   > div.calendar
   > table
   td,
 main.menu
   > div.container-menu
   > div.content
-  > div.calendar-ol
+  div.calendar-ol
   > div.calendar
   > table
   th {
@@ -243,7 +248,7 @@ main.menu
 main.menu
   > div.container-menu
   > div.content
-  > div.calendar-ol
+  div.calendar-ol
   > div.calendar
   > table
   * {
@@ -253,30 +258,68 @@ main.menu
   font-size: 10px;
 }
 
-main.menu > div.container-menu > div.content > div.calendar-ol > div.ols {
+main.menu > div.container-menu > div.content div.calendar-ol > div.ols {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-main.menu > div.container-menu > div.content > div.calendar-ol > div.ols > ol:first-child {
+main.menu
+  > div.container-menu
+  > div.content
+  div.calendar-ol
+  > div.ols
+  > ol:first-child {
   padding: 0;
 }
 
-main.menu > div.container-menu > div.content > div.calendar-ol > div.ols > * {
+main.menu > div.container-menu > div.content div.calendar-ol > div.ols > * {
   font-size: 14px;
 }
 
-main.menu > div.container-menu > div.content > div.calendar-ol > div.ols > ol {
+main.menu > div.container-menu > div.content div.calendar-ol > div.ols > ol {
   list-style: none;
   counter-reset: ol-menu-content;
 }
 
-main.menu > div.container-menu > div.content > div.calendar-ol > div.ols > ol > li {
+main.menu > div.container-menu > div.content > div.menu-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+main.menu > div.container-menu > div.content > div.menu-content > div.menu-selected-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+}
+
+main.menu > div.container-menu > div.content > div.menu-content button.selected {
+  opacity: 0.6;
+  border: 1.5px solid white;
+}
+
+main.menu
+  > div.container-menu
+  > div.content
+  div.calendar-ol
+  > div.ols
+  > ol
+  > li {
   counter-increment: ol-menu-content;
 }
 
-main.menu > div.container-menu > div.content > div.calendar-ol > div.ols > ol > li:before {
+main.menu
+  > div.container-menu
+  > div.content
+  div.calendar-ol
+  > div.ols
+  > ol
+  > li:before {
   content: counter(ol-menu-content) " - ";
   color: white;
 }

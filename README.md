@@ -12,3 +12,40 @@ Para rodar o projeto, simplesmente abra o _index.html_ presente no diretorio rai
 
 ## Consideracoes
 
+### Melhorias
+
+animacoes da navbar no dropdown e search
+
+box-shadow dos filtros
+
+marcador de selected nos filtros
+
+hide da navbar no gradiente com offset threshold
+
+gerador de bolas
+
+hover nos circulos
+
+marcador de selected no menu dropdown do fim da pagina
+
+marcador de selected nos botoes dentro do container de texto no fim da pagina
+
+### Duvidas e conclusoes
+
+sem botao de send no newsletter
+
+falta de padding-right no container de texto no fim da pagina
+
+direcionamento dos links
+
+responsividade sem redimensionar imagens
+
+falta de dimensoes definidas em conjunto com a responsividade sem redimensionamento de imagens
+
+textos sobre imagens, em fotos ou slideshows
+
+conteudo dos textos default
+
+section, main e header
+
+js pra preencher ou hardcoded?
