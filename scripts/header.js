@@ -26,16 +26,23 @@ const searchBarButton = document.querySelector(
 const searchBarSecondaryIcon = document.querySelector(
   ".nav-items .search-container i.hidden"
 );
+
+const searchContainer = searchBarButton.parentElement;
+
 const hiddenClass = "hidden";
+
+const widthTransitionClass = 'search-input-open';
 
 searchBarButton.addEventListener("click", () => {
   searchBarButton.classList.add(hiddenClass);
+  searchContainer.classList.add(widthTransitionClass);
   searchBarInput.classList.remove(hiddenClass);
   searchBarSecondaryIcon.classList.remove(hiddenClass);
 });
 
 searchBarSecondaryIcon.addEventListener("click", () => {
   searchBarButton.classList.remove(hiddenClass);
+  searchContainer.classList.remove(widthTransitionClass);
   searchBarInput.classList.add(hiddenClass);
   searchBarSecondaryIcon.classList.add(hiddenClass);
 });

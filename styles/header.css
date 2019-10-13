@@ -7,6 +7,7 @@ body > nav {
   width: 100%;
   background-color: white;
   align-items: center;
+  transition: top 0.3s;
 }
 
 .img-container {
@@ -99,7 +100,14 @@ nav .show-dropdown-menu {
   box-shadow: none;
 }
 
-.nav-items .search-container {
+nav .nav-items > .search-input-open {
+  width: 280px;
+}
+
+.nav-items > .search-container {
+  transition: width 0.3s;
+  width: 120px;
+  overflow: hidden;
   display: flex;
   margin-right: 0;
   margin-left: auto;
@@ -132,4 +140,8 @@ nav .show-dropdown-menu {
 
 .nav-items .search-container .btn {
   padding: 0;
+}
+
+body > nav.hide {
+  top: -100px;
 }
