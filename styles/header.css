@@ -51,8 +51,13 @@ body > nav img {
   flex: 1;
 }
 
-.show-dropdown-menu {
+nav .show-dropdown-menu {
   display: block;
+  border: 1px solid #0e4172;
+  max-height: 500px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: 0;
 }
 
 .dropdown-nav-menu {
@@ -63,17 +68,21 @@ body > nav img {
 }
 
 .dropdown-menu {
+  border: 1px solid #0e4172;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: 0;
+  border-bottom: 0;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  display: block;
+  max-height: 0;
   min-width: unset;
   margin: 0;
   padding: 0;
   width: calc(100% + 2px);
   left: -1px;
-  top: calc(100% - 1px);
-  border: 1px solid #0e4172;
-  border-top: 0;
-  border-radius: 5px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  top: calc(100% - 0.25rem); /* 0.25rem is a default bootstrap value, this is used to hide border-radius from above button */
 }
 
 .dropdown-item {
