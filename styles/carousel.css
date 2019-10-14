@@ -1,3 +1,11 @@
+@media only screen and (max-width: 1041px) {
+  body > section.carousel {
+    
+  margin-top: 125px;
+  }
+
+}
+
 section.carousel .carousel .carousel-item img {
   width: 100vw;
   height: 400px;

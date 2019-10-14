@@ -49,3 +49,7 @@ conteudo dos textos default
 section, main e header
 
 js pra preencher ou hardcoded?
+
+icones de redes sociais com funcao de compartilhamento? como eu vou compartilhar um site no youtube ou instagram?
+
+qual url utilizar pro share? localhost? pucrs.br?

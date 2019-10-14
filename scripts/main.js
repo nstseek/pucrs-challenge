@@ -3,8 +3,6 @@ new WOW().init();
 const gradient = document.querySelector("body > section.gradient");
 
 const navBar = document.querySelector("body > nav");
-console.log(gradient);
-console.log(navBar);
 
 const hideNavBar = "hide";
 

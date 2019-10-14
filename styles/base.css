@@ -2,6 +2,10 @@ html {
   min-width: 1000px;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   color: #0e4172;

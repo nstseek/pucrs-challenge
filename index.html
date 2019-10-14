@@ -1,6 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- Google Analytics -->
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "UA-149945886-1", "auto");
+      ga("send", "pageview");
+    </script>
+    <!-- End Google Analytics -->
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KK69X49");
+    </script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -28,30 +70,43 @@
     <title>PUCRS Challenge</title>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KK69X49"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <nav>
-      <div class="img-container"><img src="assets/logo_topo.png" /></div>
-      <div class="nav-items">
-        <span class="selected">MENU A</span>
-        <span>MENU B</span>
-        <span>MENU C</span>
-        <span>MENU D</span>
-        <div class="dropdown-nav-menu">
-          <button class="btn" type="button">
-            MAKE A SELECTION
-            <i class="fas fa-chevron-down icon"></i>
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Opcao 1</a>
-            <a class="dropdown-item" href="#">Opcao 2</a>
-            <a class="dropdown-item" href="#">Opcao 3</a>
-            <a class="dropdown-item" href="#">Opcao 4</a>
+      <div class="nav-container">
+        <div class="img-container"><img src="assets/logo_topo.png" /></div>
+        <div class="nav-items">
+          <a href="#main"><span class="selected">MENU A</span></a>
+          <a href="#main"><span>MENU B</span></a>
+          <a href="#main"><span>MENU C</span></a>
+          <a href="#main"><span>MENU D</span></a>
+          <div class="dropdown-nav-menu">
+            <button class="btn" type="button">
+              MAKE A SELECTION
+              <i class="fas fa-chevron-down icon"></i>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Opcao 1</a>
+              <a class="dropdown-item" href="#">Opcao 2</a>
+              <a class="dropdown-item" href="#">Opcao 3</a>
+              <a class="dropdown-item" href="#">Opcao 4</a>
+            </div>
           </div>
         </div>
-        <div class="search-container">
-          <button class="btn"><i class="fas fa-search"></i>SEARCH</button>
-          <input class="hidden" type="text" placeholder="Pesquise aqui" />
-          <i class="fas fa-search icon hidden"></i>
-        </div>
+      </div>
+      <div class="search-container">
+        <button class="btn"><i class="fas fa-search"></i>SEARCH</button>
+        <input class="hidden" type="text" placeholder="Pesquise aqui" />
+        <i class="fas fa-search icon hidden"></i>
       </div>
     </nav>
     <section class="carousel">
@@ -89,10 +144,10 @@
     <section class="banner">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Step One</a></li>
-          <li class="breadcrumb-item"><a href="#">Step Two</a></li>
-          <li class="breadcrumb-item"><a href="#">Step Three</a></li>
-          <li class="breadcrumb-item"><a href="#">Step Four</a></li>
+          <li class="breadcrumb-item"><a href="#main">Step One</a></li>
+          <li class="breadcrumb-item"><a href="#main">Step Two</a></li>
+          <li class="breadcrumb-item"><a href="#main">Step Three</a></li>
+          <li class="breadcrumb-item"><a href="#main">Step Four</a></li>
           <li class="breadcrumb-item">BREADCRUMB</li>
         </ol>
       </nav>
@@ -109,7 +164,7 @@
         <h3>TÍTULO DA SEÇÃO</h3>
       </div>
       <div class="circles-container">
-        <a href="#">
+        <a href="#main">
           <div class="circle-container">
             <img src="assets/pucrs-1690616.png" alt="Lorem Ipsum" />
             <h4>LOREM IPSUM DOLOR SIT AMET</h4>
@@ -119,7 +174,7 @@
             </p>
           </div>
         </a>
-        <a href="#">
+        <a href="#main">
           <div class="circle-container">
             <img
               src="assets/mc200219__puc_predio_novo__39_-8633352.jpg"
@@ -133,7 +188,7 @@
             </p>
           </div>
         </a>
-        <a href="#">
+        <a href="#main">
           <div class="circle-container">
             <img src="assets/foto3_6.jpg" alt="Lorem Ipsum" />
             <h4>LOREM IPSUM DOLOR ETUR</h4>
@@ -179,6 +234,7 @@
     </section>
     <main
       class="menu wow animated slideInRight delay-2s"
+      id="main"
       data-wow-delay="0s"
       data-wow-offset="100"
     >
@@ -598,46 +654,54 @@
           <button>BOTÃO 4</button>
         </div>
         <div class="links">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Features</a>
-          <a href="#">Pricing</a>
-          <a href="#">Contact us</a>
+          <a href="#main">Home</a>
+          <a href="#main">About</a>
+          <a href="#main">Features</a>
+          <a href="#main">Pricing</a>
+          <a href="#main">Contact us</a>
         </div>
         <div class="links">
-          <a href="#">Blog</a>
-          <a href="#">Search</a>
-          <a href="#">T & Cs</a>
-          <a href="#">Privacy</a>
-          <a href="#">Community</a>
+          <a href="#main">Blog</a>
+          <a href="#main">Search</a>
+          <a href="#main">T & Cs</a>
+          <a href="#main">Privacy</a>
+          <a href="#main">Community</a>
         </div>
         <div class="links">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-          <a href="#">Link 4</a>
-          <a href="#">Link 5</a>
+          <a href="#main">Link 1</a>
+          <a href="#main">Link 2</a>
+          <a href="#main">Link 3</a>
+          <a href="#main">Link 4</a>
+          <a href="#main">Link 5</a>
         </div>
         <div class="newsletter">
           <span>Assine nossa newsletter</span>
           <input type="text" placeholder="Informe seu e-mail" />
           <div class="social-icons">
-            <a href="#">
+            <a href="https://www.instagram.com/pucrs/?hl=pt-br">
               <i class="fab fa-instagram"></i>
             </a>
-            <a href="#">
+            <a
+              href="https://www.facebook.com/sharer/sharer.php?u=http://www.pucrs.br/"
+              target="_blank"
+            >
               <i class="fab fa-facebook-square"></i>
             </a>
-            <a href="#">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw">
               <i class="fab fa-twitter"></i>
             </a>
-            <a href="#">
+            <a href="https://www.youtube.com/channel/UCC_fcTG4eMb0pZBEi9LuNVA">
               <i class="fab fa-youtube"></i>
             </a>
           </div>
         </div>
       </div>
     </footer>
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
     <script src="scripts/packages/jquery-3.3.1.slim.min.js"></script>
     <script src="scripts/packages/popper.min.js"></script>
     <script src="scripts/packages/bootstrap.min.js"></script>

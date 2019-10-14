@@ -12,26 +12,28 @@ headerDropdownButton.addEventListener("click", () => {
     headerDropdownButton.classList.remove(openDropdownClass);
     headerDropdownContent.classList.remove(openDropdownMenu);
   } else {
+    // gtag event click analytics -- just an example
+    ga('send', 'event', 'menu', 'open', 'Navbar dropdown');
     headerDropdownButton.classList.add(openDropdownClass);
     headerDropdownContent.classList.add(openDropdownMenu);
   }
 });
 
 const searchBarInput = document.querySelector(
-  ".nav-items .search-container input"
+  ".search-container input"
 );
 const searchBarButton = document.querySelector(
-  ".nav-items .search-container button"
+  ".search-container button"
 );
 const searchBarSecondaryIcon = document.querySelector(
-  ".nav-items .search-container i.hidden"
+  ".search-container i.hidden"
 );
 
 const searchContainer = searchBarButton.parentElement;
 
 const hiddenClass = "hidden";
 
-const widthTransitionClass = 'search-input-open';
+const widthTransitionClass = "search-input-open";
 
 searchBarButton.addEventListener("click", () => {
   searchBarButton.classList.add(hiddenClass);
