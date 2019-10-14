@@ -39,7 +39,6 @@ const menuButtonCb = event => {
     event.target.classList.add("selected");
     const buttonAttr = event.target.getAttribute("data-target");
     menuViews.forEach(div => {
-      console.log(div);
       if (
         div.getAttribute("data-target") === buttonAttr &&
         div.classList.contains(hiddenClassSelector)
@@ -69,7 +68,6 @@ const insideButtonCb = event => {
       "div.menu-selected-content"
     );
     const innerScopeButtons = event.target.parentElement.children;
-    console.log(innerScopeButtons);
     for (let i = 0; i < innerScopeButtons.length; i++) {
       innerScopeButtons[i].classList.contains("selected")
         ? innerScopeButtons[i].classList.remove("selected")

@@ -14,7 +14,6 @@ window.onscroll = () => {
     window.pageYOffset < (gradient.offsetTop - threshold) + gradient.clientHeight &&
     !navBar.classList.contains(hideNavBar)
   ) {
-    console.log("cond 1");
     navBar.classList.add(hideNavBar);
   } else if (
     (window.pageYOffset < (gradient.offsetTop - threshold) &&
@@ -22,7 +21,6 @@ window.onscroll = () => {
     (window.pageYOffset > (gradient.offsetTop - threshold) + gradient.clientHeight &&
       navBar.classList.contains(hideNavBar))
   ) {
-    console.log("cond 2");
     navBar.classList.remove(hideNavBar);
   }
 };
